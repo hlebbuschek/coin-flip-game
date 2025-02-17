@@ -1,0 +1,77 @@
+body {
+  font-family: Arial;
+  font-size: xx-large;
+  color: rgb(141, 141, 141);
+}
+main {
+  padding: 20px;
+  background-color: rgb(41, 41, 41);
+  width: 800px;
+}
+.game-visual {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+  justify-content: left;
+  width: 1fr;
+}
+.user-guess {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(156, 152, 152);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+}
+button:hover {
+  opacity: 0.7;
+}
+.guess-button {
+  width: 50%;
+}
+.coin {
+  object-fit: cover;
+  object-position: center;
+  width: 250px;
+}
+.result {
+  display: flex;
+  justify-content: center;
+}
+
+.score-visual {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.score-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.reset-score {
+  position: relative;
+  margin: 0 20px;
+}
+.reset-score-button {
+  position: absolute;
+  bottom: 0;
+}
+.score-count {
+  display: flex;
+  flex-direction: column;
+}
+.wins-count, 
+.losses-count {
+  word-break: break-word;
+  padding: 0 10px;
+}
